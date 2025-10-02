@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_11___CalculadoraChurras</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons8-avançar-50.png" />
+    <None Remove="icons8-churrasco-64.png" />
+    <None Remove="icons8-divisa-circulada-à-direita-50.png" />
+    <None Remove="icons8-entrega-de-motocicleta-caixa-única-50.png" />
+    <None Remove="icons8-ordem-de-compra-48.png" />
+    <None Remove="icons8-voltar-50 %281%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icons8-avançar-50.png" />
+    <Resource Include="icons8-churrasco-64.png" />
+    <Resource Include="icons8-divisa-circulada-à-direita-50.png" />
+    <Resource Include="icons8-entrega-de-motocicleta-caixa-única-50.png" />
+    <Resource Include="icons8-ordem-de-compra-48.png" />
+    <Resource Include="icons8-voltar-50 (1).png" />
+  </ItemGroup>
+
+</Project>

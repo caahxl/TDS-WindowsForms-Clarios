@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_14___ConversorParaReais</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="fundo-azul-gradiente-de-luxo-abstrato-suave-azul-escuro-com-banner-de-estudio-de-vinheta-preta.jpg" />
+    <None Remove="Imagens\Brasil.png" />
+    <None Remove="Imagens\China.png" />
+    <None Remove="Imagens\EUA.png" />
+    <None Remove="Imagens\Euro.png" />
+    <None Remove="Imagens\Japao.png" />
+    <None Remove="Imagens\Mexico.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Imagens\fundo-azul-gradiente-de-luxo-abstrato-suave-azul-escuro-com-banner-de-estudio-de-vinheta-preta.jpg" />
+    <Resource Include="Imagens\Brasil.png" />
+    <Resource Include="Imagens\China.png" />
+    <Resource Include="Imagens\EUA.png" />
+    <Resource Include="Imagens\Euro.png" />
+    <Resource Include="Imagens\Japao.png" />
+    <Resource Include="Imagens\Mexico.png" />
+  </ItemGroup>
+
+</Project>

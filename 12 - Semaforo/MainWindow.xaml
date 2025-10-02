@@ -1,0 +1,25 @@
+﻿<Window x:Class="_12___Semaforo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_12___Semaforo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="imgSemafaro" HorizontalAlignment="Left" Height="299" Margin="580,0,0,0" VerticalAlignment="Center" Width="137" Source="/imagens/desligado.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/imagens/desligado.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <GroupBox Header="Semáfaro" Margin="54,68,400,94" FontSize="22" FontFamily="Britannic Bold" BorderBrush="Black">
+            <StackPanel Height="224" VerticalAlignment="Top">
+                <RadioButton x:Name="rdbDesligado" Content="Desligado" VerticalContentAlignment="Center" Checked="Troca_Imagem"/>
+                <RadioButton x:Name="rdbVermelho" Content="Vermelho" VerticalContentAlignment="Center" Checked="Troca_Imagem"/>
+                <RadioButton x:Name="rdbAmarelo" Content= "Amarelo" VerticalContentAlignment="Center" Checked="Troca_Imagem"/>
+                <RadioButton x:Name="rdbVerde" Content="Verde" VerticalContentAlignment="Center" Checked="Troca_Imagem"/>
+            </StackPanel>
+        </GroupBox>
+
+    </Grid>
+</Window>

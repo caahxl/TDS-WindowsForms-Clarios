@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_09___TeladeLogin</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="download %281%29.jpg" />
+    <None Remove="download %282%29.jpg" />
+    <None Remove="download %283%29.jpg" />
+    <None Remove="download.jpg" />
+    <None Remove="icons8-senha-32.png" />
+    <None Remove="icons8-senha-48.png" />
+    <None Remove="icons8-user-48.png" />
+    <None Remove="Welcome to login system  2  1600x1200 2x.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="download (1).jpg" />
+    <Resource Include="download (2).jpg" />
+    <Resource Include="download (3).jpg" />
+    <Resource Include="download.jpg" />
+    <Resource Include="icons8-senha-32.png" />
+    <Resource Include="icons8-senha-48.png" />
+    <Resource Include="icons8-user-48.png" />
+    <Resource Include="Welcome to login system  2  1600x1200 2x.jpg" />
+  </ItemGroup>
+
+</Project>

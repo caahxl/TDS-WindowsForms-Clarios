@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_06___CalculadoraDeGorjeta</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="flat-lay-assortment-with-delicious-brazilian-food.jpg" />
+    <None Remove="imagens-de-fundo-do-restaurante-e-espaco-de-copia_1179130-740204.jpg" />
+    <None Remove="o-cifrao-dourado-esta-sobre-uma-ilustracao-de-renderizacao-3d-de-fundo-cromado-escuro_989822-2416.jpg" />
+    <None Remove="renderizacao-3d-de-texto-de-dinheiro-dourado-com-simbolos-de-moeda_6359-121.jpg" />
+    <None Remove="WIN_20250512_12_26_36_Pro.jpg" />
+    <None Remove="—Slidesdocs—3d rendered illustration of credit_a3094a8216.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="flat-lay-assortment-with-delicious-brazilian-food.jpg" />
+    <Resource Include="imagens-de-fundo-do-restaurante-e-espaco-de-copia_1179130-740204.jpg" />
+    <Resource Include="o-cifrao-dourado-esta-sobre-uma-ilustracao-de-renderizacao-3d-de-fundo-cromado-escuro_989822-2416.jpg" />
+    <Resource Include="renderizacao-3d-de-texto-de-dinheiro-dourado-com-simbolos-de-moeda_6359-121.jpg" />
+    <Resource Include="WIN_20250512_12_26_36_Pro.jpg" />
+    <Resource Include="—Slidesdocs—3d rendered illustration of credit_a3094a8216.jpg" />
+  </ItemGroup>
+
+</Project>

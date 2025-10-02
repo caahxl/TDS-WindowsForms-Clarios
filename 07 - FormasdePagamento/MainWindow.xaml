@@ -1,0 +1,41 @@
+﻿<Window x:Class="_07___FormasdePagamento.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_07___FormasdePagamento"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/imagem fundo azul.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblTitulo" Content="Formas de Pagamento" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Bernard MT Condensed" FontSize="36"/>
+        <Label x:Name="lblTituloValor" Content="Valor:" HorizontalAlignment="Left" Margin="12,68,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="18"/>
+        <TextBox x:Name="txtValor" HorizontalAlignment="Right" Margin="0,0,606,335" Text="0,00" VerticalAlignment="Bottom" Width="120" Height="26" TextAlignment="Center" TextWrapping="Wrap" FontSize="22" FontFamily="Modern No. 20"/>
+        <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Right" Margin="0,116,598,0" VerticalAlignment="Top" Height="31" Width="184" FontFamily="Comic Sans MS" FontSize="16" Foreground="White" BorderBrush="Black" Click="btnCalcular_Click_1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF6158A9" Offset="1"/>
+                    <GradientStop Color="#FF9288D6" Offset="0"/>
+                    <GradientStop Color="#FFAA9EFF" Offset="0.313"/>
+                    <GradientStop Color="#FFA69AFF" Offset="0.524"/>
+                    <GradientStop Color="#FFA199DF" Offset="0.684"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblPix" Content="Pix:" HorizontalAlignment="Left" Margin="18,182,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="18"/>
+        <Separator HorizontalAlignment="Left" Height="5" Margin="18,172,0,0" VerticalAlignment="Top" Width="184" Background="Black"/>
+        <Label x:Name="lblDebito" Content="Débito:" HorizontalAlignment="Left" Margin="18,222,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="18"/>
+        <Label x:Name="lblCredito" Content="Crédito:" HorizontalAlignment="Left" Margin="18,262,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="18" RenderTransformOrigin="0.293,0.441"/>
+        <Label x:Name="lblValorPix" Content="R$ 0,00" HorizontalAlignment="Left" Margin="134,183,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="lblValorDebito" Content="R$ 0,00" HorizontalAlignment="Left" Margin="136,223,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="lblValorCredito1" Content="R$ 0,00" HorizontalAlignment="Left" Margin="136,302,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="lblUmaParcela" Content="1x" HorizontalAlignment="Left" Margin="19,302,0,0" VerticalAlignment="Top" FontSize="18" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="lblDuasParcela" Content="2x" HorizontalAlignment="Left" Margin="18,341,0,0" VerticalAlignment="Top" FontSize="18" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="lblTresParcela" Content="3x" HorizontalAlignment="Left" Margin="18,380,0,0" VerticalAlignment="Top" FontSize="18" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="lblValorCredito3" Content="R$ 0,00" HorizontalAlignment="Left" Margin="136,380,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="lblValorCredito2" Content="R$ 0,00" HorizontalAlignment="Left" Margin="136,341,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+    </Grid>
+</Window>

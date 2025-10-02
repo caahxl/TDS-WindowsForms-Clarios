@@ -1,0 +1,81 @@
+﻿<Window x:Class="_10___Eventos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_10___Eventos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Mouse">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="64*"/>
+                        <ColumnDefinition Width="21*"/>
+                        <ColumnDefinition Width="702*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnClique" Content="Clique" HorizontalAlignment="Left" Margin="3,53,0,0" VerticalAlignment="Top" Height="80" Width="250" Click="btnClique_Click" Grid.ColumnSpan="3" Grid.Column="1"/>
+                    <Button x:Name="btnMouseEnter" Content="Mouse Enter" HorizontalAlignment="Left" Margin="3,168,0,0" VerticalAlignment="Top" Height="80" Width="250" MouseEnter="btnMouseEnter_MouseEnter" Grid.ColumnSpan="3" Grid.Column="1"/>
+                    <Button x:Name="btnMouseLeave" Content="MouseLeave" HorizontalAlignment="Left" Margin="180,54,0,0" VerticalAlignment="Top" Width="250" Height="80" MouseLeave="btnMouseLeave_MouseLeave" Grid.Column="3"/>
+                    <Button x:Name="btnMouseRight" Content="MouseRight" HorizontalAlignment="Left" Margin="180,168,0,0" VerticalAlignment="Top" Width="250" Height="80" MouseRightButtonDown="btnMouseRight_MouseRightButtonDown" Grid.Column="3"/>
+                    <Button x:Name="btnDouble" Content="Double" HorizontalAlignment="Left" Margin="442,54,0,0" VerticalAlignment="Top" Width="250" Height="80" MouseDoubleClick="btnDouble_MouseDoubleClick" Grid.Column="3"/>
+                    <Button x:Name="btnMouseWheel" Content="MouseWheel" HorizontalAlignment="Left" Margin="442,168,0,0" VerticalAlignment="Top" Width="250" Height="80" MouseWheel="btnMouseWheel_MouseWheel" Grid.Column="3"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Alternar">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox x:Name="grpSemana" Header="Dia da Semana" Margin="19,29,577,249" Foreground="Red" FontFamily="Britannic Bold" BorderThickness="1,1,3,3">
+                        <StackPanel Margin="10,0,13,0" Height="95">
+                            <RadioButton x:Name="rdbSegunda1" Content="Segunda-Feira" Checked="rdbSegunda_Checked"/>
+                            <RadioButton x:Name="rdbTerca1" Content="Terça-Feira" Checked="rdbTerca_Checked"/>
+                            <RadioButton x:Name="rdbQuarta1" Content="Quarta-Feira" Checked="rdbQuarta_Checked"/>
+                            <RadioButton x:Name="rdbQuinta1" Content="Quinta-Feira" Height="12" Width="179" Checked="rdbQuinta_Checked"/>
+                            <RadioButton x:Name="rdbSexta1" Content="Sexta-Feira" Checked="rdbSexta_Checked"/>
+                        </StackPanel>
+                    </GroupBox>
+                    <TextBlock x:Name="tblDiaSelecionado" HorizontalAlignment="Left" Margin="19,171,0,0" TextWrapping="Wrap" Text="Dia da Semana Selecionado:" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight Condensed" FontSize="14"/>
+                    <TextBlock x:Name="tblDia" HorizontalAlignment="Left" Margin="19,190,0,0" TextWrapping="Wrap" Text="Segunda-Feira" VerticalAlignment="Top" FontFamily="Bodoni MT Condensed"/>
+                    <GroupBox x:Name="gprChurras" Header="CheckList do Churras" Margin="287,35,318,249" BorderThickness="1,1,3,3" FontFamily="Britannic Bold" Foreground="Red">
+                        <StackPanel Height="90" Margin="0,0,6,0">
+                            <CheckBox x:Name="chkCarne" Content="Carne" Click="CheckChurras"/>
+                            <CheckBox x:Name="chkVinagrete"  Content="Vinagrete" Click="CheckChurras"/>
+                            <CheckBox x:Name="chkPaodeAlho" Content="Pão de Alho" Click="CheckChurras"/>
+                            <CheckBox x:Name="chkFarofa" Content="Farofa" Click="CheckChurras"/>
+                            <CheckBox x:Name="chkQueijo" Content="Queijo" Click="CheckChurras"/>
+                        </StackPanel>
+                    </GroupBox>
+                    <TextBlock x:Name="tblItens" HorizontalAlignment="Left" Margin="287,171,0,0" TextWrapping="Wrap" Text="Itens OK:" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight Condensed" FontSize="14"/>
+                    <TextBlock x:Name="tblNumeroItens" HorizontalAlignment="Left" Margin="332,173,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontFamily="Modern No. 20" Width="65"/>
+                </Grid>
+            </TabItem>
+            <TabItem HorizontalAlignment="Center" Height="20" Header="EstaAtivo" VerticalAlignment="Top" Width="69" Margin="0,-1,0,0">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Height="39" Width="176" Click="btnEntrar_Click" IsEnabled="False"/>
+                    <CheckBox x:Name="chkAtivo" Content="Está ativo?" HorizontalAlignment="Left" Margin="309,170,0,0" VerticalAlignment="Top" Checked="chkAtivo_Checked"/>
+                </Grid>
+            </TabItem>
+            <TabItem HorizontalAlignment="Center" Height="20" Header="Selecionar" VerticalAlignment="Top" Width="89" Margin="0,-1,0,0">
+                <Grid Background="#FFE5E5E5">
+                    <TextBlock x:Name="tblSelecione" HorizontalAlignment="Center" Margin="0,124,0,0" TextWrapping="Wrap" Text="Selecione seu meio de transporte" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbTransporte" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="120" DropDownClosed="cmbTransporte_DropDownClosed">
+                        <ComboBoxItem Content="Moto"/>
+                        <ComboBoxItem Content="Barco"/>
+                        <ComboBoxItem Content="Carro" IsSelected="True"/>
+                        <ComboBoxItem Content="Caminhão"/>
+                        <ComboBoxItem Content="Avião"/>
+                    </ComboBox>
+                    <TextBlock x:Name="tblResposta" HorizontalAlignment="Left" Margin="309,190,0,0" TextWrapping="Wrap" Text="Resposta:" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

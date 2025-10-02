@@ -1,0 +1,138 @@
+﻿<Window x:Class="_05___MessageBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_05___MessageBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="203*"/>
+            <ColumnDefinition Width="597*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl FontFamily="Arial" Grid.ColumnSpan="2">
+            <TabItem Header="Msg Simples">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="58*"/>
+                        <ColumnDefinition Width="202*"/>
+                        <ColumnDefinition Width="535*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnSimples1" Content="Msg Simples" HorizontalAlignment="Left" Margin="67,75,0,0" VerticalAlignment="Top" Height="46" Width="140" Grid.Column="2" Click="btnSimples1_Click"/>
+                    <Button x:Name="btnSimples2" Content="Demais Arcumentos" HorizontalAlignment="Left" Margin="28,142,0,0" VerticalAlignment="Top" Height="46" Width="218" Grid.Column="2" Click="btnSimples2_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ícones">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFDCF9FF"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="380*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnIcones1" Content="Erro" HorizontalAlignment="Left" Margin="79,175,0,0" VerticalAlignment="Top" Height="29" Width="108" Click="btnIcones1_Click" Grid.Column="2" Foreground="White">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black"/>
+                                <GradientStop Color="#FFFF0044" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btnIcones2" Grid.Column="2" Content="Atenção" HorizontalAlignment="Left" Margin="227,175,0,0" VerticalAlignment="Top" Height="29" Width="108" Click="btnIcones2_Click" Foreground="White" RenderTransformOrigin="0.5,0.74">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black"/>
+                                <GradientStop Offset="1" Color="#FFFCFF00"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btnIcones3" Grid.Column="2" Content="Questão" HorizontalAlignment="Left" Margin="382,175,0,0" VerticalAlignment="Top" Height="29" Width="108" Click="btnIcones3_Click" Foreground="White">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black"/>
+                                <GradientStop Color="#FF03BFFF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btnIcones4" Grid.Column="2" Content="Informação" HorizontalAlignment="Left" Margin="538,175,0,0" VerticalAlignment="Top" Height="29" Width="108" Foreground="White" Click="btnIcones4_Click">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black"/>
+                                <GradientStop Color="#FFFF9300" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </TabItem>
+            <TabItem HorizontalAlignment="Center" Height="18" Header="Botões" VerticalAlignment="Center" Width="55">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="257*"/>
+                        <ColumnDefinition Width="537*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnBotao1" Content="Ok" HorizontalAlignment="Left" Margin="110,146,0,0" VerticalAlignment="Top" Height="32" Width="240" Foreground="White" Click="btnBotao1_Click" Grid.ColumnSpan="2">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF00FF19"/>
+                                <GradientStop Color="#FF1E7927" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btnBotao2" Content="Ok ou Cancelar" HorizontalAlignment="Left" Margin="110,255,0,0" VerticalAlignment="Top" Height="32" Width="240" Foreground="White" Click="btnBotao2_Click" Grid.ColumnSpan="2">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF00FFAC"/>
+                                <GradientStop Color="#FF0F9E6F" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btnBotao3" Content="Sim ou Não" HorizontalAlignment="Left" Margin="193,142,0,0" VerticalAlignment="Top" Height="32" Width="240" Foreground="White" Click="btnBotao3_Click" Grid.Column="1">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFFFB800"/>
+                                <GradientStop Color="#FFAE810F" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btnBotao4" Content="Cancelar ou Não ou Continuar" HorizontalAlignment="Left" Margin="193,255,0,0" VerticalAlignment="Top" Height="32" Width="240" Foreground="White" Click="btnBotao4_Click" Grid.Column="1">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Red"/>
+                                <GradientStop Color="#FF6F0909" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </TabItem>
+            <TabItem HorizontalAlignment="Center" Height="18" Header="Resposta" VerticalAlignment="Center" Width="55">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnPergunta1" Content="Pergunta 1" HorizontalAlignment="Left" Margin="220,60,0,0" VerticalAlignment="Top" Height="42" Width="177" FontSize="18" Click="btnPergunta1_Click">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="White"/>
+                                <GradientStop Color="#FF207897" Offset="1"/>
+                                <GradientStop Color="#FF00B5F6" Offset="0.468"/>
+                                <GradientStop Color="#FF1CB3E8" Offset="0.779"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Label x:Name="lblResposta" Content="Resposta" HorizontalAlignment="Left" Margin="494,86,0,0" VerticalAlignment="Top" FontSize="15" Height="34" Width="99" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Button x:Name="btnEncerrar" Content="Encerrar" HorizontalAlignment="Left" Margin="220,144,0,0" VerticalAlignment="Top" Height="41" Width="177" Click="btnEncerrar_Click" Foreground="White" FontSize="18">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Red"/>
+                                <GradientStop Color="#FF9D0505" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

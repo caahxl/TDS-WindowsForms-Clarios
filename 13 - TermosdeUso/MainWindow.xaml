@@ -1,0 +1,26 @@
+﻿<Window x:Class="_13___TermosdeUso.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_13___TermosdeUso"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFDCD4D4" Offset="1"/>
+                <GradientStop Color="#FFB7B1B1"/>
+                <GradientStop Color="White" Offset="0.462"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <ScrollViewer Margin="44,64,33,58" Background="Black">
+            <TextBlock x:Name="txtTexto" TextWrapping="Wrap" Text="TextBlock" Height="283" FontFamily="Microsoft YaHei UI Light" Background="White"/>
+        </ScrollViewer>
+        <CheckBox x:Name="chkTermo" Content="Li e concordo" HorizontalAlignment="Left" Margin="44,0,0,30" VerticalAlignment="Bottom" Click="chkTermo_Click" Checked="chkTermo_Checked"/>
+        <Button x:Name="btnInstalar" Content="Instalar" HorizontalAlignment="Right" Margin="0,0,33,21" Width="137" BorderThickness="1,1,5,5" BorderBrush="Black" FontFamily="Microsoft Sans Serif" FontSize="14" Height="32" VerticalAlignment="Bottom" IsEnabled="False" Click="btnInstalar_Click"/>
+        <Image HorizontalAlignment="Left" Height="66" Margin="44,4,0,0" VerticalAlignment="Top" Width="120" Source="/microsoft.png"/>
+        <TextBlock x:Name="tblTitulo" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Software da Camilly" VerticalAlignment="Top" FontSize="36" FontFamily="Microsoft Sans Serif" FontWeight="Bold" Margin="0,14,0,0"/>
+
+    </Grid>
+</Window>

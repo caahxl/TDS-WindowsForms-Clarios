@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_12___Semaforo</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="desligado.png" />
+    <None Remove="imagens\amarelo.png" />
+    <None Remove="imagens\verde.png" />
+    <None Remove="imagens\vermelho.png" />
+    <None Remove="verde.png" />
+    <None Remove="vermelho.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="imagens\amarelo.png" />
+    <Resource Include="imagens\desligado.png" />
+    <Resource Include="imagens\verde.png" />
+    <Resource Include="imagens\vermelho.png" />
+    <Resource Include="verde.png" />
+    <Resource Include="vermelho.png" />
+  </ItemGroup>
+
+</Project>

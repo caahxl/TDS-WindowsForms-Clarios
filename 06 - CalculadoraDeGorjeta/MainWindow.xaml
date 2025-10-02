@@ -1,0 +1,45 @@
+﻿<Window x:Class="_06___CalculadoraDeGorjeta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_06___CalculadoraDeGorjeta"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/—Slidesdocs—3d rendered illustration of credit_a3094a8216.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblComanda" Content="Comanda:" HorizontalAlignment="Right" Margin="0,157,444,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="lblTitulo" Content="TipMaster" HorizontalAlignment="Center" Margin="0,28,0,0" VerticalAlignment="Top" FontFamily="Stencil" FontSize="48" Background="#00000000" Foreground="White"/>
+        <Label x:Name="lblSubtitulo" Content="Calculadora" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Imprint MT Shadow" FontSize="20" Foreground="Black" Margin="0,94,0,0"/>
+        <Label x:Name="lblGorjeta" Content="Gorjeta:" HorizontalAlignment="Right" Margin="0,0,444,183" VerticalAlignment="Bottom" FontFamily="Georgia" FontSize="18" Width="92" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="txtValorNota" HorizontalAlignment="Right" Margin="0,159,264,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="160" Height="26" FontFamily="Cambria" FontSize="14" TextAlignment="Center" Background="#FFEDEAEA" FontWeight="Bold"/>
+        <ComboBox x:Name="cmbAcrescimo" HorizontalAlignment="Right" Margin="0,0,264,186" VerticalAlignment="Bottom" Width="160" Height="25" BorderBrush="Black" Text="0%" FontWeight="Bold" FontSize="14">
+            <ComboBoxItem Content="5%"/>
+            <ComboBoxItem Content="10%"/>
+            <ComboBoxItem Content="15%"/>
+            <ComboBoxItem Content="20%"/>
+        </ComboBox>
+        <Label x:Name="lblComanda2" Content="Comanda:" HorizontalAlignment="Right" Margin="0,281,602,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="lblGorjeta2" Content="Gorjeta:" HorizontalAlignment="Left" Margin="319,281,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="18" Width="92" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="lblTotal" Content="Total a Pagar:" HorizontalAlignment="Left" Margin="516,281,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="lblValorComanda" Content="R$ 0,00" HorizontalAlignment="Left" Margin="198,282,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Lucida Bright" Width="112" Foreground="White"/>
+        <Separator HorizontalAlignment="Left" Margin="147,0,0,0" VerticalAlignment="Center"/>
+        <Separator x:Name="sepDivisao" HorizontalAlignment="Left" Height="19" Margin="69,262,0,0" VerticalAlignment="Top" Width="685" FontSize="14" Background="White"/>
+        <Label x:Name="lblValorGorjeta" Content="R$ 0,00" HorizontalAlignment="Left" Margin="404,282,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Lucida Bright" Width="112" Foreground="White"/>
+        <Label x:Name="lblValorTotal" Content="R$ 0,00" HorizontalAlignment="Left" Margin="659,282,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Lucida Bright" Width="112" Foreground="White"/>
+        <Button x:Name="btnCalcular" Content="Calcular" HorizontalAlignment="Center" Margin="0,354,0,0" VerticalAlignment="Top" Height="39" Width="198" Foreground="White" FontFamily="Bahnschrift Condensed" FontSize="24" BorderBrush="White" Click="btnCalcular_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5148FF"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="_15___CriancaoDeComponentes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_15___CriancaoDeComponentes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="73,65,0,0" TextWrapping="Wrap" Text="Bebidas Escolhidas" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="517,65,0,0" TextWrapping="Wrap" Text="Comida Escolhida" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <TextBlock x:Name="tblBebidaManual" HorizontalAlignment="Left" Margin="126,105,0,0" TextWrapping="Wrap" Text="Nenhuma" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblComida" HorizontalAlignment="Left" Margin="565,108,0,0" TextWrapping="Wrap" Text="Nenhuma" VerticalAlignment="Top"/>
+        <GroupBox Header="Bebida Favorita:" Margin="39,158,534,112" FontSize="16">
+            <StackPanel Margin="0,10,0,0">
+                <RadioButton x:Name="rdbCafe" Content="Café" Checked="escolherBebida"/>
+                <RadioButton x:Name="rdbCha" Content="Chá"/>
+                <RadioButton x:Name="Suco" Content="Suco"/>
+                <RadioButton x:Name="rdbAgua" Content="Água"/>
+                <RadioButton x:Name="rdbRefrigerante" Content="Refrigerante"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Comida Favorita:" Margin="484,158,101,112">
+            <StackPanel x:Name="stkComida"/>
+        </GroupBox>
+
+    </Grid>
+</Window>

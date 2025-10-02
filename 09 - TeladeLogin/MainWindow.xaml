@@ -1,0 +1,88 @@
+﻿<Window x:Class="_09___TeladeLogin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_09___TeladeLogin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="466" Width="735">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Rectangle HorizontalAlignment="Left" Height="455" VerticalAlignment="Center" Width="261" Margin="474,0,0,0" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.949"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/download (3).jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle HorizontalAlignment="Left" Height="450" VerticalAlignment="Center" Width="261">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/download (3).jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle HorizontalAlignment="Center" Height="343" VerticalAlignment="Center" Width="383" RadiusX="20" RadiusY="20" Opacity="0.3">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF4A8FF"/>
+                    <GradientStop Color="#FFFFDDFD" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <TextBox x:Name="txtLogin" Style="{StaticResource CaixaDeTextoArredondada}" HorizontalAlignment="Left" Margin="251,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="30" FontSize="10" BorderBrush="Black" BorderThickness="1,1,2,5">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFDBFEB"/>
+                    <GradientStop Color="#FFFF91DE" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="lbTituloUsuario" Content="Usuário:" HorizontalAlignment="Left" Margin="252,164,0,0" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblTituloSenha" Content="Senha:" HorizontalAlignment="Left" Margin="254,242,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Microsoft Sans Serif"/>
+        <Button x:Name="btnEntrar" Style="{StaticResource BotaoArredondado}" Content="Entrar" HorizontalAlignment="Left" Margin="280,334,0,0" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Height="36" Width="164" Foreground="#FF00036F" FontSize="16" FontWeight="Bold" BorderThickness="1,1,2,5" BorderBrush="Black" Click="btnEntrar_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFACFFF9"/>
+                    <GradientStop Color="#FF00FFED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblImgUsuario" HorizontalAlignment="Left" Margin="448,193,0,0" VerticalAlignment="Top" Height="18" Width="18">
+            <Label.Background>
+                <ImageBrush ImageSource="/icons8-user-48.png"/>
+            </Label.Background>
+        </Label>
+        <Canvas HorizontalAlignment="Left" Height="55" Margin="322,10,0,0" VerticalAlignment="Top" Width="139">
+
+            <Label x:Name="lblTitulo" Content="Sing" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="Lucida Fax" FontWeight="Bold" BorderBrush="#FF1504BB" Foreground="#FF00036F" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="78" Canvas.Left="-28"/>
+            <Label x:Name="lblTitulo_Copiar" Content="In" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="Lucida Fax" FontWeight="Bold" BorderBrush="#FF1504BB" Foreground="#FF00036F" BorderThickness="0,0,0,3" HorizontalAlignment="Left" Canvas.Left="64" VerticalAlignment="Center" Canvas.Top="78"/>
+        </Canvas>
+        <PasswordBox x:Name="pwdSenha" Style="{StaticResource senhaRedonda}" HorizontalAlignment="Left" Margin="252,265,0,0" VerticalAlignment="Top" Width="217" Height="33" BorderBrush="Black" BorderThickness="1,1,2,5" Password="*">
+            <PasswordBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFDBFEB"/>
+                    <GradientStop Color="#FFFF91DE" Offset="1"/>
+                </LinearGradientBrush>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <Label x:Name="lblImgSenha" HorizontalAlignment="Left" Margin="448,271,0,0" VerticalAlignment="Top" Height="18" Width="18">
+            <Label.Background>
+                <ImageBrush ImageSource="/icons8-senha-32.png"/>
+            </Label.Background>
+        </Label>
+
+    </Grid>
+</Window>
