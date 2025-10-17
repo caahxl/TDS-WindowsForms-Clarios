@@ -1,0 +1,76 @@
+﻿<Window x:Class="_18___LotoSenai.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_18___LotoSenai"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="685" Width="925">
+    <Grid Margin="0,0,-31,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Center" Margin="0,11,0,0" TextWrapping="Wrap" Text="Loto SENAI" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,48,0,0" TextWrapping="Wrap" Text="Digite os 5 números que você deseja tentar a sorte e, em seguida, pressione em 'Apostar'" VerticalAlignment="Top" FontSize="18" Width="548" TextAlignment="Center"/>
+        <TextBox x:Name="txtPrimeiro" Margin="181,119,694,448" TextWrapping="Wrap" TextAlignment="Center" FontSize="48" Text="0"/>
+        <TextBox x:Name="txtSegundo" Margin="322,119,553,448" TextWrapping="Wrap" Text="0" TextAlignment="Center" FontSize="48"/>
+        <TextBox x:Name="txtTerceiro" Margin="455,119,421,448" TextWrapping="Wrap" Text="0" TextAlignment="Center" FontSize="48"/>
+        <TextBox x:Name="txtQuarto" Margin="584,119,292,448" TextWrapping="Wrap" Text="0" TextAlignment="Center" FontSize="48"/>
+        <TextBox x:Name="txtQuinto" Margin="722,119,150,448" TextWrapping="Wrap" Text="0" TextAlignment="Center" FontSize="48"/>
+        <Button x:Name="btnApostar" Content="Apostar" HorizontalAlignment="Right" Margin="0,231,377,0" VerticalAlignment="Top" FontSize="20" Width="168" Height="45" Foreground="White" BorderBrush="Black" BorderThickness="1,1,3,3" Click="btnApostar_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF450C0C"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="tblPrimeiro" HorizontalAlignment="Left" Margin="181,477,0,115" TextWrapping="Wrap" Text="0" Width="81" FontSize="48" TextAlignment="Center"/>
+        <TextBlock x:Name="tblSegundo" Margin="322,477,553,115" TextWrapping="Wrap" Text="0" TextAlignment="Center" FontSize="48"/>
+        <TextBlock x:Name="tblTerceiro" Margin="455,477,421,115" TextWrapping="Wrap" Text="0" TextAlignment="Center" FontSize="48"/>
+        <TextBlock x:Name="tblQuarto" Margin="584,477,292,115" TextWrapping="Wrap" Text="0" TextAlignment="Center" FontSize="48"/>
+        <TextBlock x:Name="tblQuinto" Margin="722,475,150,115" TextWrapping="Wrap" Text="0" FontSize="48" TextAlignment="Center"/>
+        <TextBlock x:Name="tblResultado" Margin="389,567,275,79" TextWrapping="Wrap" Text="Você acertou 0 número(s)" FontSize="16"/>
+        <WrapPanel x:Name="wrpImagens" Margin="127,303,88,200">
+            <WrapPanel.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="Margin" Value="5"/>
+                    <Setter Property="Width" Value="60"/>
+                    <Setter Property="Height" Value="60"/>
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="/Imagens/bola-cinza.png"/>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </WrapPanel.Resources>
+            <Label Content="1"/>
+            <Label Content="2"/>
+            <Label Content="3"/>
+            <Label Content="4"/>
+            <Label Content="5"/>
+            <Label Content="6"/>
+            <Label Content="7"/>
+            <Label Content="8"/>
+            <Label Content="9"/>
+            <Label Content="10"/>
+            <Label Content="11"/>
+            <Label Content="12"/>
+            <Label Content="13"/>
+            <Label Content="14"/>
+            <Label Content="15"/>
+            <Label Content="16"/>
+            <Label Content="17"/>
+            <Label Content="18"/>
+            <Label Content="19"/>
+            <Label Content="20"/>
+        </WrapPanel>
+    </Grid>
+</Window>

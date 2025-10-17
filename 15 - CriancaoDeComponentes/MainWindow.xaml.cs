@@ -20,7 +20,7 @@ namespace _15___CriancaoDeComponentes
         {
             InitializeComponent();
 
-            // Criando RadioButton programticamente
+            // Criando RadioButton programaticamente
 
             RadioButton rdbComida1 = new RadioButton();
             rdbComida1.Content = "Pizza";

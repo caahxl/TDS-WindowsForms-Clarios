@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_17___Oshi_Sushi</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="2.jpg" />
+    <None Remove="Cardápio para restaurante de comida japonesa oriental vermelho.zip" />
+    <None Remove="renderizacao-3d-de-sushi.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Img\2.jpg" />
+    <Resource Include="Cardápio para restaurante de comida japonesa oriental vermelho.zip" />
+    <Resource Include="renderizacao-3d-de-sushi.jpg" />
+  </ItemGroup>
+
+</Project>

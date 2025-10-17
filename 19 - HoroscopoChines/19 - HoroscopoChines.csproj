@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_19___HoroscopoChines</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="imagens\cachorro.png" />
+    <None Remove="imagens\carneiro.png" />
+    <None Remove="imagens\cavalo.png" />
+    <None Remove="imagens\cobra.png" />
+    <None Remove="imagens\coelho.png" />
+    <None Remove="imagens\dragao.png" />
+    <None Remove="imagens\galo.png" />
+    <None Remove="imagens\javali.png" />
+    <None Remove="imagens\macaco.png" />
+    <None Remove="imagens\rato.png" />
+    <None Remove="imagens\tigre.png" />
+    <None Remove="imagens\touro.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="imagens\cachorro.png" />
+    <Resource Include="imagens\carneiro.png" />
+    <Resource Include="imagens\cavalo.png" />
+    <Resource Include="imagens\cobra.png" />
+    <Resource Include="imagens\coelho.png" />
+    <Resource Include="imagens\dragao.png" />
+    <Resource Include="imagens\galo.png" />
+    <Resource Include="imagens\javali.png" />
+    <Resource Include="imagens\macaco.png" />
+    <Resource Include="imagens\rato.png" />
+    <Resource Include="imagens\tigre.png" />
+    <Resource Include="imagens\touro.png" />
+  </ItemGroup>
+
+</Project>

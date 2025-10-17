@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_18___LotoSenai</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Imagens\bola-azul.png" />
+    <None Remove="Imagens\bola-cinza.png" />
+    <None Remove="Imagens\bola-laranja.png" />
+    <None Remove="Imagens\bola-roxa.png" />
+    <None Remove="Imagens\bola-verde-escuro.png" />
+    <None Remove="Imagens\bola-verde.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Imagens\bola-azul.png" />
+    <Resource Include="Imagens\bola-cinza.png" />
+    <Resource Include="Imagens\bola-laranja.png" />
+    <Resource Include="Imagens\bola-roxa.png" />
+    <Resource Include="Imagens\bola-verde-escuro.png" />
+    <Resource Include="Imagens\bola-verde.png" />
+  </ItemGroup>
+
+</Project>
